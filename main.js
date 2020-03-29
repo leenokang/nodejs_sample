@@ -9,7 +9,36 @@ function templateHTML(title, list, body){
   <head>
     <title>WEB1 - ${title}</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <style>
+      .container {
+        display:flex;
+        flex-direction:column;
+      }
+      header {
+        border-bottom:1px solid gray;
+        padding-left:20px;
+      }
+      #text {
+        text-decoration:none;
+      }
+      .content {
+        display:flex;
+        flex-direction:raw;
+      }
+      .content ul {
+          border-right:1px;
+          flex-basis:200px;
+          flex-shrink:0;
+          list-style:none;
+          float:left;
+      }
+      footer {
+        border-top:1px;
+        padding-left:20px;
+        text-align:center;
+        background-color:lightgray;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
